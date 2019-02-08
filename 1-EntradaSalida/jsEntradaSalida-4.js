@@ -4,9 +4,8 @@
 */
 function mostrar()
 {
-	var mario
-	mario = prompt("Escriba");
-	document.getElementById("elNombre").value=mario;
+	var nombre
+	nombre = prompt("Escriba su nombre");
+	document.getElementById("elNombre").value = nombre;
 	
 }
-

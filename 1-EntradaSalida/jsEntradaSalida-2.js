@@ -2,11 +2,8 @@
 y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
-    var mario
-    mario = prompt("Escriba");
-    alert("Hola");
-    
-
+    var dato
+    dato = prompt("Escriba un dato");
+    alert("El dato escrito es "+dato);
 
 }
-

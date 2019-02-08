@@ -4,33 +4,57 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {
-    var suma
-    suma = parseInt(document.getElementById("numeroUno").value) + parseInt(document.getElementById("numeroDos").value);
-    alert("La suma es "+suma);
+    var primera
+    var segunda
+    var resultado
+    primera = document.getElementById("numeroUno").value;
+    segunda = document.getElementById("numeroDos").value;
+    primera = parseInt (primera);
+    segunda = parseInt (segunda);
+    resultado = (primera + segunda);
+    alert("La suma es "+resultado);
 
 }
 
 function restar()
 {
-    var resta
-    resta = parseInt(document.getElementById("numeroUno").value) - parseInt(document.getElementById("numeroDos").value);
-    alert("La resta es " +resta);
+    var primera
+    var segunda
+    var resultado
+    primera = document.getElementById("numeroUno").value;
+    segunda = document.getElementById("numeroDos").value;
+    primera = parseInt (primera);
+    segunda = parseInt (segunda);
+    resultado = (primera - segunda);
+    alert("La resta es "+resultado);
 
 }
 
 function multiplicar()
-{ 
-    var multiplo
-    multiplo = parseInt(document.getElementById("numeroUno").value) * parseInt(document.getElementById("numeroDos").value);
-    alert("El multiplo es "+multiplo);
+{
+    var primera
+    var segunda
+    var resultado
+    primera = document.getElementById("numeroUno").value;
+    segunda = document.getElementById("numeroDos").value;
+    primera = parseInt (primera);
+    segunda = parseInt (segunda);
+    resultado = (primera * segunda);
+    alert("La multiplicacion es "+resultado);
 
 }
 
 function dividir()
 {
-    var division
-    division = parseInt(document.getElementById("numeroUno").value) / parseInt(document.getElementById("numeroDos").value);
-    alert("La division es "+division);
-
+    var primera
+    var segunda
+    var resultado
+    primera = document.getElementById("numeroUno").value;
+    segunda = document.getElementById("numeroDos").value;
+    primera = parseInt (primera);
+    segunda = parseInt (segunda);
+    resultado = (primera / segunda);
+    alert("La division es "+resultado);
+    
 }
 

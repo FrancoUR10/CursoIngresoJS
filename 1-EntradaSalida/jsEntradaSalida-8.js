@@ -5,11 +5,14 @@ ej.: "El resto es 0 ."*/
 function SacarResto()
 
 {
-    var dividendo = document.getElementById("numeroDividendo").value;
-    var divisor = document.getElementById("numeroDivisor").value;
-    var mario = parseInt (dividendo) % parseInt (divisor);
-    alert(mario);
-
-
-
+    var primera
+    var segunda
+    var resultado
+    primera = document.getElementById("numeroDividendo").value;
+    segunda = document.getElementById("numeroDivisor").value;
+    primera = parseInt (primera);
+    segunda = parseInt (segunda);
+    resultado = (primera % segunda);
+    alert("El resto entre el dividendo y el divisor es "+resultado);
+    
 }
