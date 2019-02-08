@@ -5,6 +5,7 @@ ej.: "El resto es 0 ."*/
 function SacarResto()
 {
     var mario
-    mario=parseInt(document.getElementById(numeroUno).value) % parseInt(document.getElementById(numeroDos).value);
-    alert()
+    mario = parseInt(document.getElementById("numeroDividendo").value) % parseInt(document.getElementById("numeroDivisor").value);
+    alert("El resto es "+mario);
+
 }
