@@ -5,7 +5,7 @@ function mostrar()
     var mario
     var años
     mario = document.getElementById("elNombre").value;
-    años = document.getElementById("laEdad").value;
+    años = parseInt(document.getElementById("laEdad").value);
     alert("Usted se llama "+mario+" y tiene "+años+" años");
 
 }

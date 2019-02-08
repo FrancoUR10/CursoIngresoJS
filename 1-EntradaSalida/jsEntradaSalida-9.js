@@ -3,11 +3,11 @@ transformarlo a entero (parseInt), luego
 mostrar el importe con un aumento del 10 %
 en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
+
 {
-    var mario
-    mario = parseInt(document.getElementById("sueldo").value);
-    document.getElementById("resultado").value=mario;
+var mario = document.getElementById("sueldo").value;
+Mario = parseInt (mario);
 
-
+var resultado = document.getElementById("resultado").value = (mario * 1.10);
 
 }

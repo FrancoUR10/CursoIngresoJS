@@ -7,4 +7,5 @@ function sumar()
     mario = parseInt(document.getElementById("numeroUno").value) + parseInt(document.getElementById("numeroDos").value);
     alert("La suma es "+mario);
     
+
 }

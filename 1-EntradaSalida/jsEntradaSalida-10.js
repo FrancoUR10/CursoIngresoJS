@@ -5,8 +5,9 @@ en el cuadro de texto "RESULTADO"*/
 function mostrarAumento()
 {
     var mario
-    mario = parseInt(document.getElementById("importe").value);
-    document.getElementById("resultado").value=mario;
+    mario = document.getElementById("importe").value;
+    mario = parseInt(mario);
+    var resultado = document.getElementById("resultado").value = mario - (mario * 25)/100;
     
 
 }

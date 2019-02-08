@@ -3,9 +3,13 @@ transformarlos a enteros (parseInt),realizar la operación correcta y
 mostrar el resto entre el dividendo y el divisor.
 ej.: "El resto es 0 ."*/
 function SacarResto()
+
 {
-    var mario
-    mario = parseInt(document.getElementById("numeroDividendo").value) % parseInt(document.getElementById("numeroDivisor").value);
-    alert("El resto es "+mario);
+    var dividendo = document.getElementById("numeroDividendo").value;
+    var divisor = document.getElementById("numeroDivisor").value;
+    var mario = parseInt (dividendo) % parseInt (divisor);
+    alert(mario);
+
+
 
 }
