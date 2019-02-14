@@ -3,11 +3,9 @@ transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
-    var primera
-    var segunda
     var resultado
-    primera = document.getElementById("numeroUno").value;
-    segunda = document.getElementById("numeroDos").value;
+    var primera = document.getElementById("numeroUno").value;
+    var segunda = document.getElementById("numeroDos").value;
     primera = parseInt(primera);
     segunda = parseInt(segunda);
     resultado = (primera + segunda);

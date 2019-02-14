@@ -5,11 +5,9 @@ ej.: "El resto es 0 ."*/
 function SacarResto()
 
 {
-    var primera
-    var segunda
     var resultado
-    primera = document.getElementById("numeroDividendo").value;
-    segunda = document.getElementById("numeroDivisor").value;
+    var primera = document.getElementById("numeroDividendo").value;
+    var segunda = document.getElementById("numeroDivisor").value;
     primera = parseInt (primera);
     segunda = parseInt (segunda);
     resultado = (primera % segunda);
