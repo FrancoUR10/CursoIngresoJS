@@ -2,22 +2,22 @@ function mostrar()
 {
 	//Genero el número RANDOM entre 1 y 10 
 	
-	var aleatorio
-	var excelente
-	aleatorio = 1 + Math.round(Math.random() * 9);
-	alert("El número es "+aleatorio);
-	excelente = (aleatorio >= 9) && (aleatorio <= 10);
-	if (excelente)
+	var aleatorio = 1 + Math.round(Math.random() * 9);
+	alert("El número es: "+aleatorio);
+	if (aleatorio < 4)
 	{
-		alert("Excelente");
-	}
-	else if (aleatorio >= 4)
-	{
-		alert("Aprobó");
+		alert("Vamos, la proxima se puede");
 	}
 	else
 	{
-		alert("Vamos, la proxima se puede");
+		if (aleatorio <= 8)
+		{
+			alert("Aprobó");
+		}
+		else
+		{
+			alert("Excelente");
+		}
 	}
 
 }//FIN DE LA FUNCIÓN
