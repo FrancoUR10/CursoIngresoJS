@@ -12,7 +12,7 @@ function Rectangulo ()
     var ancho = document.getElementById("Ancho").value;
     largo = parseInt (largo);
     ancho = parseInt (ancho);
-    perimetro = (ancho * 2 + largo * 4);
+    perimetro = (ancho * 2 + largo * 2);
     alambre = (perimetro * 3);
     alert("La cantidad de alambre a comprar es: "+alambre);
 }
@@ -21,6 +21,7 @@ function Circulo ()
     var alambre
     var radio = document.getElementById("Radio").value;
     radio = parseInt (radio);
+    (2 * 3.14 + radio)
     alambre = (radio * 3);
     alert("La cantidad de alambre a comprar es: "+alambre);
 }

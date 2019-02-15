@@ -26,11 +26,13 @@ function Promedio ()
     precioDos = parseInt (precioDos);
     precioTres = parseInt (precioTres);
     suma = (precioUno + precioDos + precioTres);
-    promedio = (suma );
+    promedio = (suma / 3);
     alert("El promedio es: "+promedio);
 }
 function PrecioFinal () 
 {
+    var iva
+    var suma
     var precioUno = document.getElementById("PrecioUno").value;
     var precioDos = document.getElementById("PrecioDos").value;
     var precioTres = document.getElementById("PrecioTres").value;
@@ -38,6 +40,6 @@ function PrecioFinal ()
     precioDos = parseInt (precioDos);
     precioTres = parseInt (precioTres);
     suma = (precioUno + precioDos + precioTres);
-    iva = (suma * 0.21);
+    iva = (suma * 1.21);
     alert("El precio final más el Iva es: "+iva);
 }
