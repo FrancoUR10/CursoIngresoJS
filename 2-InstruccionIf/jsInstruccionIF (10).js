@@ -1,16 +1,16 @@
 function mostrar()
 {
 	//Genero el número RANDOM entre 1 y 10 
-	
-	var aleatorio = 1 + Math.round(Math.random() * 9);
-	alert("El número es: "+aleatorio);
-	if (aleatorio < 4)
+
+	var random = Math.floor(Math.random()*10)+1;
+	alert("El número random es: "+random);
+	if (random < 4)
 	{
 		alert("Vamos, la proxima se puede");
 	}
 	else
 	{
-		if (aleatorio <= 8)
+		if (random <= 8)
 		{
 			alert("Aprobó");
 		}
