@@ -1,13 +1,13 @@
 
 function mostrar()
 {
-    var ancho
-    var largo
-    var perimetro
-    ancho = prompt("Escriba el ancho de un rectángulo");
-    largo = prompt("Escriba el largo de un rectángulo");
-    ancho = parseInt (ancho);
-    largo = parseInt (largo);
-    perimetro = (ancho * 2) + (largo * 4);
-    alert("El perimetro de un rectángulo es: "+perimetro);
+    var pesoTotal
+    var mascotaUno = prompt("Nombre de su primera mascota");
+    var pesoUno = prompt("Escriba el peso de su primera mascota");
+    var mascotaDos = prompt("Nombre de su segunda mascota");
+    var pesoDos = prompt("Escriba el peso de su segunda mascota");
+    pesoUno = parseInt (pesoUno);
+    pesoDos = parseInt (pesoDos);
+    pesoTotal = (pesoUno + pesoDos);
+    alert("Tenes dos mascotas "+mascotaUno+" y "+mascotaDos+", que pesan: "+pesoUno+" y "+pesoDos+" la suma de los kilos es: "+pesoTotal);
 }
