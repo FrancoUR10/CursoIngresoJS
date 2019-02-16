@@ -1,10 +1,10 @@
 function mostrar()
 {
-    var precio = document.getElementById("elPrecioFinal").value;
+    var total
+    var precio = prompt("Escriba el precio en total");
+    var grupo = prompt("Escriba la cantidad de amigos en el grupo");
     precio = parseInt (precio);
-    var grupo = prompt("El grupo de amigos");
     grupo = parseInt (grupo);
-    grupo = (grupo + 10 / 100);
-    total = (precio / grupo);
+    total = (precio * 1.10 / grupo);
     alert("En total cada uno debe pagar "+total);
 }
