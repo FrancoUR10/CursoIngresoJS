@@ -1,40 +1,35 @@
 function mostrar()
 {
+    var precioTotal;
+    var pagoTarjeta;
+    var precioValor=0
+    var precioCantidad=0;
     var precio = prompt("Escriba el total a pagar");
-    var pagoTarjeta = prompt("Escriba el total a pagar con tarjeta");
     var libros = prompt("Cantidad de libros comprados");
     precio = parseInt (precio);
-    pagoTarjeta = parseInt (pagoTarjeta);
     libros = parseInt (libros);
-    pagoTarjeta = (pagoTarjeta * 1.10);
     if (libros >= 2 && precio <= 2000)
     {
-        alert("La compra es de "+precio * 10 / 100);
+        precioCantidad = (precio - (precio * 10 / 100));
+        precioTotal = (precioCantidad);
     }
     else
     {
         if (libros >= 2 && precio > 2000)
         {
-            alert("La compra es de "+precio * 15 / 100);
+            precioCantidad = (precio - (precio * 10 / 100));
+            precioValor = (precioCantidad - (precioCantidad * 15 / 100))
+            precioTotal = (precioValor);
         }
         else
         {
-            alert("La compra es de "+precio);
+            precioTotal = (precio);
         } 
     }
-    if (libros >= 2 && pagoTarjeta <= 2000)
+    pagoTarjeta = prompt("¿Paga con tarjeta?");
+    if (pagoTarjeta == "si")
     {
-        alert("La compra con tarjeta es de "+pagoTarjeta * 10 / 100);
+        precioTotal = (precioTotal * 1.10);
     }
-    else
-    {
-        if (libros >= 2 && pagoTarjeta > 2000)
-        {
-            alert("La compra con tarjeta es de "+pagoTarjeta * 15 / 100);
-        }
-        else
-        {
-            alert("La compra con tarjeta es de "+pagoTarjeta);
-        }
-    }
+    alert("El precio total es de: "+precioTotal);
 }
