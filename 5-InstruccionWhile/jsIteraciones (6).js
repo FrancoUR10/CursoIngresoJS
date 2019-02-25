@@ -1,13 +1,15 @@
 function mostrar()
 {
-	var numeroUno = prompt("Escriba el primer número");
-	var numeroDos = prompt("Escriba el segundo número");
-	var numeroTres = prompt("Escriba el tercer número");
-	var numeroCuatro = prompt("Escriba el cuarto número");
-	var numeroCinco = prompt("Escriba el quinto número");
-	var contador=0;
-	var acumulador=0;
-	document.getElementById('suma').value=acumulador;
-	document.getElementById('promedio').value=acumulador/5;
-
+	var cantidad = 0;
+	var contador = 0;
+	var acumulador = 0;
+	while (contador < 5)
+	{
+		contador = (contador + 1);
+		cantidad = prompt("Ingrese un número.");
+		cantidad = parseInt (cantidad);
+		acumulador = (acumulador + cantidad);
+	}
+	document.getElementById("suma").value = acumulador;
+	document.getElementById("promedio").value = (acumulador / contador);
 }//FIN DE LA FUNCIÓN
