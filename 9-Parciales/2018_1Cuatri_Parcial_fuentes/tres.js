@@ -7,5 +7,5 @@ function mostrar()
     descuento = prompt("Escriba el descuento");
     precio = parseInt (precio);
     descuento = parseInt (descuento);
-    resultado = document.getElementById("elPrecioFinal").value = (precio * descuento / 100);
+    resultado = document.getElementById("elPrecioFinal").value = (precio - (precio * descuento / 100));
 }
