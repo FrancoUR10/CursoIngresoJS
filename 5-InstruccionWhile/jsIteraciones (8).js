@@ -4,27 +4,26 @@ function mostrar()
 	var numero
 	var contador=0;
 	var positivo=0;
-	var negativo=1;
-	
-	var respuesta='si';
-	while (respuesta != "no")
-	{
-		numero = prompt("Ingrese un número");
-		numero = parseInt (numero);
+  var negativo=-1;
+  var respuesta;
+  do
+  {
+    numero = prompt("Ingrese un número");
+    numero = parseInt (numero);
 		if (numero > 0)
 		{
-			positivo = (positivo + numero);
+      positivo = (positivo + numero);
 		}
 		else
 		{
-			if (numero < 0)
+      if (numero < 0)
 			{
-				contador = (contador + 1);
+        contador = (contador + 1);
 				negativo = (negativo * numero);
 			}
 		}
-		respuesta = prompt("¿Desea ingresar otro número?");
-	}
+  }
+  while (respuesta = confirm("¿Desea ingresar otro número?"));
 
 
 document.getElementById('suma').value=positivo;

@@ -1,7 +1,7 @@
 function mostrar()
 {
-	//declarar contadores y variables 
-	
+	//declarar contadores y variables
+
 	var numero;
 	var sumaPositivos=0;
 	var sumaNegativos=0;
@@ -12,10 +12,9 @@ function mostrar()
 	var promedioPositivos=0;
 	var promedioNegativos=0;
 	var diferenciaSumas=0;
-	var diferenciaCantidad=0;
-
-	var respuesta="si";
-	while(respuesta!='no')
+  var diferenciaCantidad=0;
+  var respuesta;
+	do
 	{
 		numero = prompt("Escriba un número");
 		numero = parseInt (numero);
@@ -39,16 +38,16 @@ function mostrar()
 		{
 			cantidadPares = (cantidadPares + 1);
 		}
-		respuesta = prompt("¿Desea escribir otro número?");
-	}
+  }
+  while (respuesta = confirm("¿Desea escribir otro número?"));
 	diferenciaSumas = (sumaPositivos + sumaNegativos);
 	diferenciaCantidad = (cantidadPositivos - cantidadNegativos);
-	document.write("Suma de positivos: "+sumaPositivos+" Suma de negativos: "+sumaNegativos+
+
+  document.write("Suma de positivos: "+sumaPositivos+" Suma de negativos: "+sumaNegativos+
 	" Cantidad de positivos: "+cantidadPositivos+" Cantidad de negativos: "+cantidadNegativos+
 	" Cantidad de ceros: "+cantidadCeros+" Cantidad de pares: "+cantidadPares+
 	" Promedio de positivos: "+promedioPositivos+" Promedio de negativos: "+promedioNegativos+
 	" Diferencia entre positivos y negativos: "+diferenciaSumas+
-	" Diferencia entre cantidad de positivos y negativos: "+diferenciaCantidad);
-
+  " Diferencia entre cantidad de positivos y negativos: "+diferenciaCantidad);
 
 }//FIN DE LA FUNCIÓN
