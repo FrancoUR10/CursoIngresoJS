@@ -1,6 +1,7 @@
 function mostrar()
 {
-  var hora = prompt("Ingrese una hora.");
+  var hora = document.getElementById("laHora").value;
+  hora = parseInt(hora);
   switch (hora)
   {
     case 6 :
@@ -21,5 +22,9 @@ function mostrar()
     case 19 :
       alert("Las "+hora+" horas es de tarde.");
       break;
+  }
+  if (hora < "12" || hora > "19")
+  {
+    alert("Las "+hora+" horas es de noche.");
   }
 }
