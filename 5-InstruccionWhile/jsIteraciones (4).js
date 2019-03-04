@@ -1,11 +1,23 @@
 function mostrar()
 {
-	var numero = prompt("ingrese un número entre 0 y 9.");
-	while (numero >= 0 && numero <= 9)
+	var contador=0;
+	var numero;
+	//numero = prompt("Ingrese un número entre 0 y 9");
+	//numero = parseInt(numero);
+	do
+	{
+		contador = (contador + 1);
+		numero = prompt("Ingrese un número entre 0 y 9");
+		numero = parseInt(numero);
+	} while (numero < 0 || numero > 9 && contador < 3);
+	if (numero >= 0 && numero <= 9)
 	{
 		document.getElementById("Numero").value = (numero);
-		break;
 	}
+}
+//FIN DE LA FUNCIÓN
 
-
-}//FIN DE LA FUNCIÓN
+/*
+Para validar un numero, se requerira usar "do while".
+En caso de utilizar solamente while, se debera pedir el numero antes y durante while.
+*/

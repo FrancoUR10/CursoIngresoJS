@@ -1,24 +1,15 @@
 function mostrar()
 {
-    var sexo = prompt("ingrese f ó m .");
-    while (sexo != "exit")
-    {   
-        if (sexo == "f")
-        {
-            alert("El sexo es Femenino");
-        }
-        else
-        {
-            if (sexo == "m")
-            {
-                alert("El sexo es Masculino");
-            }
-            else
-            {
-                alert("No es ni Femenino ni Masculino");
-            }
-        }
-        sexo = prompt("ingrese f ó m .");
-        document.getElementById('Sexo').value=sexo;
+    var contador=0;
+    var sexo;
+    while (sexo != "f" && sexo != "m" && contador < 3)
+    {
+        contador = (contador + 1);
+        sexo = prompt("Ingrese el sexo de la persona.");
     }
-}//FIN DE LA FUNCIÓN
+    if (sexo == "f" || sexo == "m")
+    {
+        document.getElementById("Sexo").value = (sexo);
+    }
+}
+//FIN DE LA FUNCIÓN

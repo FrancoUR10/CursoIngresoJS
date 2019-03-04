@@ -2,33 +2,32 @@ function mostrar()
 {
 	//declarar contadores y variables
 
-	var numero;
-	var sumaPositivos=0;
-	var sumaNegativos=0;
-	var cantidadPositivos=0;
-	var cantidadNegativos=0;
+	var diferencia=0;
+	var promedioNegativo=0;
+	var promedioPositivo=0;
+	var cantidadPar=0;
 	var cantidadCeros=0;
-	var cantidadPares=0;
-	var promedioPositivos=0;
-	var promedioNegativos=0;
-	var diferenciaSumas=0;
-  var diferenciaCantidad=0;
-  var respuesta;
+	var cantidadNegativo=0;
+	var cantidadPositivo=0;
+	var sumaPositivo=0;
+	var sumaNegativo=0;
+	var numero;
+	var respuesta;
 	do
 	{
-		numero = prompt("Escriba un número");
-		numero = parseInt (numero);
-		if (numero > 0)
-		{
-			sumaPositivos = (sumaPositivos + numero);
-			cantidadPositivos = (cantidadPositivos + 1);
-			promedioPositivos = (sumaPositivos / cantidadPositivos);
-		}
+		numero = prompt("Ingrese un número.");
+		numero = parseInt(numero);
 		if (numero < 0)
 		{
-			sumaNegativos = (sumaNegativos + numero);
-			cantidadNegativos = (cantidadNegativos + 1);
-			promedioNegativos = (sumaNegativos / cantidadNegativos);
+			cantidadNegativo = (cantidadNegativo + 1);
+			sumaNegativo = (sumaNegativo + numero);
+			promedioNegativo = (sumaNegativo / cantidadNegativo);
+		}
+		else
+		{
+			cantidadPositivo = (cantidadPositivo + 1);
+			sumaPositivo = (sumaPositivo + numero);
+			promedioPositivo = (sumaPositivo / cantidadPositivo);
 		}
 		if (numero == 0)
 		{
@@ -36,18 +35,14 @@ function mostrar()
 		}
 		if (numero % 2 == 0)
 		{
-			cantidadPares = (cantidadPares + 1);
+			cantidadPar = (cantidadPar + 1);
 		}
-  }
-  while (respuesta = confirm("¿Desea escribir otro número?"));
-	diferenciaSumas = (sumaPositivos + sumaNegativos);
-	diferenciaCantidad = (cantidadPositivos - cantidadNegativos);
-
-  document.write("Suma de positivos: "+sumaPositivos+" Suma de negativos: "+sumaNegativos+
-	" Cantidad de positivos: "+cantidadPositivos+" Cantidad de negativos: "+cantidadNegativos+
-	" Cantidad de ceros: "+cantidadCeros+" Cantidad de pares: "+cantidadPares+
-	" Promedio de positivos: "+promedioPositivos+" Promedio de negativos: "+promedioNegativos+
-	" Diferencia entre positivos y negativos: "+diferenciaSumas+
-  " Diferencia entre cantidad de positivos y negativos: "+diferenciaCantidad);
-
+	}
+	while (respuesta = confirm("¿Desea ingresar otro número?"));
+	diferencia = (sumaPositivo + sumaNegativo);
+	document.write("Suma negativos: "+sumaNegativo+" Suma positivos: "+sumaPositivo+
+	" Cantidad positivos: "+cantidadPositivo+" Cantidad negativos: "+cantidadNegativo+
+	" Cantidad ceros: "+cantidadCeros+" Cantidad pares: "+cantidadPar+
+	" Promedio positivos: "+promedioPositivo+" Promedio negativos: "+promedioNegativo+
+	" Diferencia entre positivos y negativos: "+diferencia);
 }//FIN DE LA FUNCIÓN

@@ -1,30 +1,30 @@
 function mostrar()
 {
-  // declarar variables
+	// declarar variables
+
 
 	var numero;
+	numero = prompt("Ingrese un número.");
+	numero = parseInt(numero);
 	var maximo;
 	var minimo;
-	numero = prompt("Escriba un número.");
-	numero = parseInt (numero);
+	var respuesta;
 	maximo = (numero);
 	minimo = (numero);
-  var respuesta;
-  do
-  {
-    numero = prompt("Escriba otro número.");
-		numero = parseInt (numero);
+	do
+	{
+		numero = prompt("Ingrese un número.");
+		numero = parseInt(numero);
 		if (numero > maximo)
 		{
-      maximo = (numero);
+			maximo = (numero);
 		}
 		if (numero < minimo)
 		{
-      minimo = (numero);
+			minimo = (numero);
 		}
-	}
-  while (respuesta = confirm("¿Desea escribir otro número?"));
-	document.getElementById("maximo").value=maximo;
-  document.getElementById("minimo").value=minimo;
-
+		
+	} while (respuesta = confirm("¿Desea ingresar otro número?"));
+	document.getElementById("maximo").value = (maximo);
+	document.getElementById("minimo").value = (minimo);
 }//FIN DE LA FUNCIÓN
