@@ -41,5 +41,3 @@ function mostrar()
       alert("Las "+laHora+" no existe.");
   }
 }//FIN DE LA FUNCIÓN
-
-// 7 && 11 // 12 && 19// 20 && 24 // 0 && 6//

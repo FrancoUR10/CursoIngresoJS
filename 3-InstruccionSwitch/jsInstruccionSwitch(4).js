@@ -24,8 +24,3 @@ function mostrar()
 //alert (mesDelAño);
 
 }//FIN DE LA FUNCIÓN
-
-
-//Enero Marzo Mayo Julio Agosto Octubre Diciembre  31
-//Abril Junio Septiembre Noviembre   30
-//Febrero 28
