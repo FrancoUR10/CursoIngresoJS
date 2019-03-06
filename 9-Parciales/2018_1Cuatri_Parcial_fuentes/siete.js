@@ -27,6 +27,10 @@ function mostrar()
         {
           notaValida = true;
         }
+        else
+        {
+          alert("La nota ingresada no es un número.");
+        }
       }
     }
     sexoValido = false;

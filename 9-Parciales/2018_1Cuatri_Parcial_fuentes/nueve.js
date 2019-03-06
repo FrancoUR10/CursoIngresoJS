@@ -32,6 +32,10 @@ function mostrar()
                 {
                     pesoValido = true;
                 }
+                else
+                {
+                    alert("El peso ingresado no es númerico.");
+                }
             }
         }
         temperaturaValida = false;
@@ -48,6 +52,10 @@ function mostrar()
                 if (temperatura >= -30 && temperatura <= 30)
                 {
                     temperaturaValida = true;
+                }
+                else
+                {
+                    alert("La temperatura ingresada no es númerica.");
                 }
             }
         }

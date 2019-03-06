@@ -31,6 +31,10 @@ function mostrar()
                 {
                     numeroValido = true;
                 }
+                else
+                {
+                    alert("El dato ingresado no es un número.");
+                }
             }
         }
         letraValida = false;
