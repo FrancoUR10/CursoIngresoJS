@@ -1,14 +1,14 @@
 function mostrar()
 {
-  var planetas = prompt("Escriba un planeta del sistema solar.");
-  switch (planetas)
+  var planeta = prompt("Ingrese un planeta del sistema solar.");
+  switch (planeta)
   {
-    case "tierra" :
-      alert("Acá vivimos.");
-      break;
     case "mercurio" :
     case "venus" :
-      alert("Acá hace mas calor.");
+      alert("Acá hace más calor.");
+      break;
+    case "tierra" :
+      alert("Acá vivimos.");
       break;
     case "marte" :
     case "júpiter" :
@@ -16,10 +16,10 @@ function mostrar()
     case "urano" :
     case "neptuno" :
     case "plutón" :
-      alert("Acá hace mas frio.");
+      alert("Acá hace más frio.");
       break;
     default :
-      alert("El planeta "+planetas+" no existe o no pertenece al sistema solar.");
-      break;
+      alert("El planeta "+planeta+" no existe o pertenece al sistema solar.");
   }
 }
+// tierra/mercurio/venus/marte/júpiter/saturno/urano/neptuno/plutón

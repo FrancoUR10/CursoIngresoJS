@@ -37,5 +37,6 @@ function mostrar()
             total = (mayor * 1.15);
         }
     }
+    alert("El mayor es: "+mayor);
     alert("El total de importe es: "+total);
 }

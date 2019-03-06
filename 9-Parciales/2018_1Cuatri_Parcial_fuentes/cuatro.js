@@ -1,30 +1,33 @@
 function mostrar()
 {
-  var suma
-  var resta
+  var suma;
   var numeroUno = prompt("Ingrese un número.");
   var numeroDos = prompt("Ingrese otro número.");
   numeroUno = parseInt(numeroUno);
   numeroDos = parseInt(numeroDos);
-  if (numeroUno == numeroDos)
+  resta = (numeroUno - numeroDos);
+  suma = (numeroUno + numeroDos);
+  if (numeroUno > numeroDos)
   {
-    alert("El número "+numeroUno+" y "+numeroDos+" son iguales.");
+    alert("La resta es: "+resta);
   }
   else
   {
-    if (numeroUno > numeroDos)
+    if (numeroUno < numeroDos && suma > 10)
     {
-      resta = (numeroUno - numeroDos);
-      alert("La resta de "+numeroUno+" y "+numeroDos+" es: "+resta);
+      alert("La suma es "+suma+" y supera el 10");
     }
     else
     {
-      suma = (numeroUno + numeroDos);
-      alert("La suma de "+numeroUno+" y "+numeroDos+" es: "+suma);
+      if (suma <= 10 && numeroUno != numeroDos)
+      {
+        alert("La suma es: "+suma);
+      }
     }
   }
-  if (suma > 10)
+  if (numeroUno == numeroDos)
   {
-    alert("La suma "+suma+" supero el 10");
+    alert("Los números "+numeroUno+" y "+numeroDos+" son iguales.");
   }
 }
+    

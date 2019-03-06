@@ -1,28 +1,65 @@
 function mostrar()
 {
-  var promedio
-  var notaBaja
-  var acumulador
-  var alumnos=0;
-  var notas;
-  var genero;
-  genero = prompt("Escriba el sexo del alumno/a.");
-  genero = parseInt(genero);
-  while (notas < 0 || notas > 10 && genero != "f" || genero != "m" && alumnos < 5)
+  var cantidadM=0;
+  var flag=true;
+  var minimo;
+  var contador=0;
+  var promedio=0;
+  var acumulador=0;
+  var sexoValido;
+  var notaValida;
+  var nota;
+  var sexo;
+  for (var i=0; i<5; i++)
   {
-    alumnos = (alumnos + 1);
-    notas = prompt("Escriba la nota del examen.");
-    notas = parseInt(notas);
-  if (notas >= 1 && notas <= 10)
-  {
-    acumulador = (acumulador + 1);
-    promedio = (notas / alumnos);
+    notaValida = false;
+    while (notaValida == false)
+    {
+      nota = prompt("Ingrese la nota del examen.");
+      nota = parseInt(nota);
+      if (nota < 0 || nota > 10)
+      {
+        alert("La nota "+nota+" no es valida");
+      }
+      else
+      {
+        if (nota >= 0 && nota <= 10)
+        {
+          notaValida = true;
+        }
+      }
+    }
+    sexoValido = false;
+    while (sexoValido == false)
+    {
+      sexo = prompt("Ingrese el sexo del alumno/a.");
+      if (sexo != "f" && sexo != "m")
+      {
+        alert("El sexo "+sexo+" no es valido.");
+      }
+      else
+      {
+        sexoValido = true;
+      }
+    }
+    contador = (contador + 1);
+    acumulador = (acumulador + nota);
+    promedio = (acumulador / contador);
+    if (flag == true)
+    {
+      minimo = (nota);
+      flag = false;
+    }
+    if (nota < minimo)
+    {
+      minimo = (nota);
+    }
+    if (sexo == "m" && nota >= 6)
+    {
+      cantidadM = (cantidadM + 1);
+    }
   }
-}
-alert("El promedio de las notas es: "+promedio);
-if (notas < notaBaja)
-{
-  notaBaja = (notas);
-}
-alert("La nota mas baja es: ")
+  alert("El promedio de las notas totales es: "+promedio);
+  alert("La nota mas baja es "+minimo+" y el sexo de esa persona es "+sexo);
+  alert("La cantidad de varones cuya nota fue mayor o igual a 6 es de "+cantidadM+" varones.");
 }

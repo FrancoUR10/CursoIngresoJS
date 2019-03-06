@@ -1,11 +1,10 @@
 function mostrar()
 {
-    var precio
-    var descuento
-    var resultado
-    precio = prompt("Escriba el precio");
-    descuento = prompt("Escriba el descuento");
-    precio = parseInt (precio);
-    descuento = parseInt (descuento);
-    resultado = document.getElementById("elPrecioFinal").value = (precio - (precio * descuento / 100));
+    var precioFinal;
+    var precio = prompt("Ingrese el precio.");
+    var descuento = prompt("Ingrese el descuento");
+    precio = parseInt(precio);
+    descuento = parseInt(descuento);
+    precioFinal = (precio - (precio * descuento / 100));
+    document.getElementById("elPrecioFinal").value = (precioFinal);
 }

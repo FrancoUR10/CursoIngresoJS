@@ -22,9 +22,25 @@ function mostrar()
     case 19 :
       alert("Las "+hora+" horas es de tarde.");
       break;
+    case 0 :
+    case 1 :
+    case 2 :
+    case 3 :
+    case 4 :
+    case 5 :
+    case 20 :
+    case 21 :
+    case 22 :
+    case 23 :
+    case 24 :
+      alert("Las "+hora+" horas es de noche.");
+      break;
+    default :
+      alert("La hora "+hora+" no existe.");
+      break;
   }
-  if (hora < "12" || hora > "19")
+  if (hora >= 20 && hora <= 24)
   {
-    alert("Las "+hora+" horas es de noche.");
+    alert("A dormir.");
   }
 }
